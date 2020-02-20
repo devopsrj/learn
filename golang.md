@@ -6,3 +6,4 @@ Learning Resources:
  - https://learn.go.dev/
  - https://larien.gitbook.io/aprenda-go-com-testes/
  - https://go-proverbs.github.io/
+ - https://greatercommons.com/learn/golang-ptbr
