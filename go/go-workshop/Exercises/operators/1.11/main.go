@@ -14,3 +14,9 @@ func main() {
 	fmt.Println("Gold member   :", visits > 20 && visits <= 30)
 	fmt.Println("Platinum member :", visits > 30)
 }
+
+CREATE EVENT `call_partition_maintenance_all` ON SCHEDULE
+EVERY 1 DAY 
+STARTS TIMESTAMP(NOW() + INTERVAL 1 MINUTE)
+ON COMPLETION PRESERVE ENABLE
+DO CALL partition_maintenance_all('zabbix',60,400);
